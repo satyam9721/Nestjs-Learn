@@ -19,3 +19,35 @@ satyam_007@Satyams-MacBook-Air project-name % npm run start
 
 nestjs vs express.js
 
+#install husky
+
+ % npm install husky --save-dev
+
+ % npx husky init
+
+
+
+#for_commintlint  
+  
+> npm install --save-dev @commitlint/{config-conventional,cli}
+
+
+commit types:-
+
+  feat     → new feature
+fix      → bug fix
+docs     → documentation
+style    → formatting
+refactor → code restructuring
+test     → adding tests
+chore    → maintenance
+
+#then_create new file with this contains.
+commitlint.config.js
+export default {
+  extends: ['@commitlint/config-conventional'],
+};
+
+
+
+example :- git commit -m "feat: add user authentication"
