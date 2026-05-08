@@ -196,7 +196,49 @@ AppService.ts
 HTTP Response
  
 
+----------------------------------------------------------------------------------------------------------
+Decorators
 
+NestJS heavily uses decorators:-
+ 
+@Controller()
+@Get()
+@Post()
+@Injectable()
+@Module()
+
+ Modules
+
+Everything belongs inside modules:-
+ 
+AuthModule
+UserModule
+ProductModule
+DatabaseModule
+
+🚀 Real Project Architecture:-
+
+src/
+│
+├── auth/
+│   ├── auth.controller.ts
+│   ├── auth.service.ts
+│   ├── auth.module.ts
+│
+├── users/
+│   ├── users.controller.ts
+│   ├── users.service.ts
+│   ├── users.module.ts
+│
+├── database/
+├── common/
+├── config/
+│
+└── main.ts
+
+ 
+
+ 
 
 
 
