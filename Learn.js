@@ -51,3 +51,12 @@ export default {
 
 
 example :- git commit -m "feat: add user authentication"
+
+
+nestjs start in pnpm:-
+
+  pnpm run start:dev
+ pnpm approve-builds
+  pnpm install
+ pnpm run start:dev
+
