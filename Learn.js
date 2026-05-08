@@ -293,3 +293,11 @@ export class AuthController {
 created endpoint:= post -> http://localhost:3000/auth/register
 
 
+"mainly we need controller only for new routers and new service intergation with router"
+
+-> for hashing the function use the bcrpt via cmd
+
+ >  pnpm add bcrypt
+ >  pnpm add -D @types/bcrypt
+
+
