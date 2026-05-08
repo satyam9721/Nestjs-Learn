@@ -239,9 +239,10 @@ src/
  
 
  Now we have to add auth fuctionallity then executed cmd then i got file and folder structures,also app.module.ts changes.
-
->  % nest g module auth
+Genrate folder & file via cmd only, not create pysically
+>  nest g module auth
 > nest g controller auth
+> nest g s auth
 then auth folder created with auth.module.ts
 
 then old app.module.ts:-
