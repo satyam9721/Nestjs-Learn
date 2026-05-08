@@ -240,7 +240,8 @@ src/
 
  Now we have to add auth fuctionallity then executed cmd then i got file and folder structures,also app.module.ts changes.
 
-  >  % nest g module auth
+>  % nest g module auth
+> nest g controller auth
 then auth folder created with auth.module.ts
 
 then old app.module.ts:-
@@ -271,5 +272,23 @@ import { AuthModule } from './auth/auth.module';
 })
 export class AppModule {}
 
+
+for any help to create services:- 
+ nest --help
+
+----------------------------------------------------------------------------------------------------------
+
+import { Controller, Post } from '@nestjs/common';
+
+@Controller('auth') // due to this ('auth') final endpoint to call methods would be "/auth/register"
+export class AuthController {
+    @Post('register')
+    register(){
+        return{ message: 'User registered sucessfully!'};
+    }
+
+}
+
+created endpoint:= post -> http://localhost:3000/auth/register
 
 
