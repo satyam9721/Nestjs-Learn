@@ -238,10 +238,38 @@ src/
 
  
 
- 
+ Now we have to add auth fuctionallity then executed cmd then i got file and folder structures,also app.module.ts changes.
+
+  >  % nest g module auth
+then auth folder created with auth.module.ts
+
+then old app.module.ts:-
+
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 
+@Module({
+  imports: [],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
 
+then new app.module.ts:-
+
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { AuthModule } from './auth/auth.module';
+
+@Module({
+  imports: [AuthModule],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
 
 
 
