@@ -300,4 +300,29 @@ created endpoint:= post -> http://localhost:3000/auth/register
  >  pnpm add bcrypt
  >  pnpm add -D @types/bcrypt
 
+----------------------------
+connecting mongodb to nest.js
 
+docker-compose.yml
+
+services:
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+> docker compose up -d
+  >  pnpm add @nestjs/mongoose mongoose
+ >  pnpm add @nestjs/config
+
+
+first i created compoose file which is docker file then i pulled the images,
+ installed mongoose 
+
+
+ 
